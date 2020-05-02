@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
       console.log('data :>> ', data);
 
       var dateResult = data.search("ContentPlaceHolder_lblDateValue")
-      var date = data.substring(dateResult + 33, dateResult + 42)
+      var date = data.substring(dateResult + 33, dateResult + 43)
       console.log('date :>> ', date);
 
       var quoteResult = data.search("ContentPlaceHolder_lblQuoteValue")
