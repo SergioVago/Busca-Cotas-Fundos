@@ -8,18 +8,16 @@ export default class Cards extends Component {
 
   render() {
     return (
-      <div className="founds-container">
-        <ul className="founds-container">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </ul>
+      <div className="cards">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </div>
     );
   }

@@ -1,4 +1,4 @@
-.founds-container{
+/*.founds-container{
   background-color: #03151D;
   align-items: center;
   align-content: space-between;
@@ -61,4 +61,15 @@
   color: #5F5F5F;
   line-height: 21px;
   font-size: 16px;
+}*/
+
+.card {
+  flex-basis: 30%;
+  flex-grow : 1;
+
+  background: #fff;
+  min-width : 320px;
+  height    : 350px;
+
+  border-radius: 15px;
 }

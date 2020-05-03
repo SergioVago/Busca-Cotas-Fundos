@@ -17,8 +17,8 @@ export default class Card extends Component {
       cnpj: "24.018977/0001-02"
     }
     return (
-      <div className="founds-container">
-        <ul>
+      <div className="card">
+        {/* <ul>
           <li className="founds-container">
             <div className="founds-container-header">
               <strong> {founds.nome}</strong>
@@ -28,16 +28,17 @@ export default class Card extends Component {
               </button>
 
             </div>
+ */}
 
-            <p>  Nome: {founds.nome}</p>
-            <p> Cota: {founds.cota}</p>
+        <p>  Nome: {founds.nome}</p>
+        <p> Cota: {founds.cota}</p>
 
-            <p>Data: {founds.data}</p>
-            <p>CNPJ: {founds.cnpj}</p>
+        <p>Data: {founds.data}</p>
+        <p>CNPJ: {founds.cnpj}</p>
 
-          </li>
-        </ul>
-      </div>
+        {/* </li>
+        </ul > */}
+      </div >
 
     );
   }
