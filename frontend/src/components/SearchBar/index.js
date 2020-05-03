@@ -6,6 +6,8 @@ import api from '../../api/api'
 import './styles.css'
 
 export default props => {
+
+
   const mapFunds = (funds) => {
     const teste = funds.map(fund => {
       return {
@@ -24,11 +26,17 @@ export default props => {
     );
   };
 
-  const promiseOptions = async inputValue => {
+  const serchFunds = async () => {
+    const { data: funds } = await api.get()
+    return funds
+  }
+
+  const funds = serchFunds()
+  const mapedFunds = mapFunds(funds)
+
+
+  const promiseOptions = inputValue => {
     console.log('inputValue :>> ', inputValue);
-    const { data: funds } = await api.get('/')
-    const fundsAll = funds.all
-    const mapedFunds = mapFunds(fundsAll)
 
     return new Promise(resolve => {
       setTimeout(() => {

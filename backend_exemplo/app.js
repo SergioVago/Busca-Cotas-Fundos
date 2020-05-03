@@ -53,7 +53,8 @@ app.get('/', (req, res) => {
       cnpj = reverseStr(cnpj)
       console.log('cnpj :>> ', cnpj);
 
-      res.status(200).json({ date, quote, cnpj })
+      const name = "Fundo de teste"
+      return res.status(200).json([{ name, date, quote, cnpj }])
     })
 })
 
