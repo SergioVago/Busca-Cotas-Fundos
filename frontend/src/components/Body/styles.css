@@ -11,7 +11,7 @@ header hr {
     width     : 80%;
     margin    : 0 auto;
     margin-top: 50px;
-
+    
     display       : flex;
     flex-direction: column;
 }
@@ -72,6 +72,8 @@ header hr {
     flex-wrap      : wrap;
     justify-content: space-between;
     margin         : 30px 0;
+    align-items: center;
+    
 }
 
 #container .cota {

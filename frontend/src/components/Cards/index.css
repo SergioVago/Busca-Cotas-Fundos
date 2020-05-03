@@ -1,0 +1,12 @@
+.founds-container{
+ 
+  background-color: #03151D;
+  align-items: center;
+  align-content: space-between;
+  max-width: 1080px;
+  width: 80%;
+} 
+.founds-container ul{
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
