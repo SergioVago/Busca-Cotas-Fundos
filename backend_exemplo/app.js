@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
       cnpj = reverseStr(cnpj)
       console.log('cnpj :>> ', cnpj);
 
-      res.status(200).json({ date, quote, cnpj })
+      return res.status(200).json({ date, quote, cnpj })
     })
 })
 
