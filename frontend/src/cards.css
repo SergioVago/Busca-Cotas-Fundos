@@ -1,0 +1,9 @@
+.founds-container{
+ 
+  background-color: #03151D;
+  align-items: center;
+  align-content: space-between;
+} 
+.founds-container ul{
+  grid-template-columns: repeat(3, 1fr);
+}
