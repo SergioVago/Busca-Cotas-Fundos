@@ -1,12 +1,14 @@
 import React from 'react';
 import './global.css';
 
-import SearchBar from './components/SearchBar'
+import Body from './components/Body'
+import Header from './components/Header'
 
 function App() {
   return (
     <div className="App">
-      <SearchBar />
+      <Header />
+      <Body />
     </div>
   );
 }

@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import AsyncSelect from 'react-select/async';
+import debounce from 'lodash/debounce';
 
 import api from '../../api/api'
 
 import './styles.css'
 
 export default props => {
-
-
   const mapFunds = (funds) => {
     const teste = funds.map(fund => {
       return {
@@ -26,20 +25,15 @@ export default props => {
     );
   };
 
-  const serchFunds = async () => {
-    const { data: funds } = await api.get()
-    return funds
-  }
-
-  const funds = serchFunds()
-  const mapedFunds = mapFunds(funds)
 
 
   const promiseOptions = inputValue => {
     console.log('inputValue :>> ', inputValue);
 
     return new Promise(resolve => {
-      setTimeout(() => {
+      setTimeout(async () => {
+        const { data: funds } = await api.get()
+        const mapedFunds = mapFunds(funds)
         resolve(filterFunds(inputValue, mapedFunds));
       }, 1000);
     });
@@ -48,8 +42,9 @@ export default props => {
   return (
     <AsyncSelect
       cacheOptions
-      defaultOptions
-      loadOptions={promiseOptions}
+      // defaultOptions
+      loadOptions={debounce(promiseOptions, 1000)}
+      placeholder="Busque por nome ou CNPJ"
       onChange={props.changeFunction} />
   );
 }

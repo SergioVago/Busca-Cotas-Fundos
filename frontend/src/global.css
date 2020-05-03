@@ -8,9 +8,14 @@
 }
 
 body {
-  font                  : 400 14px Roboto, sans-serif;
-  background            : #f0f0f5;
   -webkit-font-smoothing: antialiased;
+
+  font-family   : 'Sen', sans-serif;
+  font-weight   : bold;
+  letter-spacing: 2.5px;
+
+  background: #03151D;
+  color     : #efefef;
 }
 
 input,
