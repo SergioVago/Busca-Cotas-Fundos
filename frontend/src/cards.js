@@ -7,7 +7,7 @@ export default class cards extends Component{
   render(){
     return(
       <React.StrictMode >
-        <div class = "founds-container">
+        <div className = "founds-container">
           <ul className="founds-container">
           <Card/>
           <Card/>

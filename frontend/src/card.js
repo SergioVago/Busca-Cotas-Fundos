@@ -5,8 +5,8 @@ import './card.css'
 
 export default class card extends Component{
 
-   handleFavorite = () => {
-    console.log("Favorite activete");
+   handleFavorite (){
+    console.log("Favorite activeted");
   }
   
   render(){
@@ -23,7 +23,7 @@ export default class card extends Component{
             <div className = "founds-container-header">
               <strong> {founds.nome}</strong>
               
-              <button type="button">
+              <button onClick = {this.handleFavorite} type="button">
                 <FaStar size={30} color="#CFCFCF"/>
               </button>
             
