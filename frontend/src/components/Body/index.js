@@ -1,6 +1,7 @@
 import React from 'react'
 
 import SearchBar from '../SearchBar/index'
+import Cards from '../Cards/index'
 
 import './styles.css'
 
@@ -25,70 +26,8 @@ export default props => {
         <button>Favoritos</button>
       </section>
 
-      <section class="cotas">
-        <div class="cota">
-          <h1>Título</h1>
-          <p>Nome: Adam Advanced II FIC de FIM Créd Priv Invest Ext </p>
-          <p>Cota:  1,90305953</p>
-          <p>Data: 29/04/2020</p>
-          <p>CNPJ: 24.018.977/0001-02</p>
-        </div>
-        <div class="cota">
-          <h1>Título</h1>
-          <p>Nome: Adam Advanced II FIC de FIM Créd Priv Invest Ext </p>
-          <p>Cota:  1,90305953</p>
-          <p>Data: 29/04/2020</p>
-          <p>CNPJ: 24.018.977/0001-02</p>
-        </div>
-        <div class="cota">
-          <h1>Título</h1>
-          <p>Nome: Adam Advanced II FIC de FIM Créd Priv Invest Ext </p>
-          <p>Cota:  1,90305953</p>
-          <p>Data: 29/04/2020</p>
-          <p>CNPJ: 24.018.977/0001-02</p>
-        </div>
 
-        <div class="cota"><h1>Título</h1>
-          <p>Nome: Adam Advanced II FIC de FIM Créd Priv Invest Ext </p>
-          <p>Cota:  1,90305953</p>
-          <p>Data: 29/04/2020</p>
-          <p>CNPJ: 24.018.977/0001-02</p></div>
-        <div class="cota">
-          <h1>Título</h1>
-          <p>Nome: Adam Advanced II FIC de FIM Créd Priv Invest Ext </p>
-          <p>Cota:  1,90305953</p>
-          <p>Data: 29/04/2020</p>
-          <p>CNPJ: 24.018.977/0001-02</p>
-        </div>
-        <div class="cota">
-          <h1>Título</h1>
-          <p>Nome: Adam Advanced II FIC de FIM Créd Priv Invest Ext </p>
-          <p>Cota:  1,90305953</p>
-          <p>Data: 29/04/2020</p>
-          <p>CNPJ: 24.018.977/0001-02</p>
-        </div>
-
-        <div class="cota">
-          <h1>Título</h1>
-          <p>Nome: Adam Advanced II FIC de FIM Créd Priv Invest Ext </p>
-          <p>Cota:  1,90305953</p>
-          <p>Data: 29/04/2020</p>
-          <p>CNPJ: 24.018.977/0001-02</p></div>
-        <div class="cota">
-          <h1>Título</h1>
-          <p>Nome: Adam Advanced II FIC de FIM Créd Priv Invest Ext </p>
-          <p>Cota:  1,90305953</p>
-          <p>Data: 29/04/2020</p>
-          <p>CNPJ: 24.018.977/0001-02</p>
-        </div>
-        <div class="cota">
-          <h1>Título</h1>
-          <p>Nome: Adam Advanced II FIC de FIM Créd Priv Invest Ext </p>
-          <p>Cota:  1,90305953</p>
-          <p>Data: 29/04/2020</p>
-          <p>CNPJ: 24.018.977/0001-02</p>
-        </div>
-      </section>
+      <Cards></Cards>
     </div>
   )
 }
