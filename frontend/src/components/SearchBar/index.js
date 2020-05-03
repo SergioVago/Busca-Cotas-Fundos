@@ -1,50 +1,25 @@
 import React, { useState } from 'react';
-import AsyncSelect from 'react-select/async';
-import debounce from 'lodash/debounce';
-
-import api from '../../api/api'
+import Select from 'react-select';
 
 import './styles.css'
 
 export default props => {
   const mapFunds = (funds) => {
-    const teste = funds.map(fund => {
+    const options = funds.map(fund => {
       return {
         label: fund.name,
-        value: fund.cnpj,
-        ...fund
+        value: fund.cnpj
       }
     })
-    console.log('teste :>> ', teste);
-    return teste
-  }
-
-  const filterFunds = (inputValue, funds) => {
-    return funds.filter(fund =>
-      fund.label.toLowerCase().includes(inputValue.toLowerCase())
-    );
-  };
-
-
-
-  const promiseOptions = inputValue => {
-    console.log('inputValue :>> ', inputValue);
-
-    return new Promise(resolve => {
-      setTimeout(async () => {
-        const { data: funds } = await api.get()
-        const mapedFunds = mapFunds(funds)
-        resolve(filterFunds(inputValue, mapedFunds));
-      }, 1000);
-    });
+    return options
   }
 
   return (
-    <AsyncSelect
-      cacheOptions
-      // defaultOptions
-      loadOptions={debounce(promiseOptions, 1000)}
+    <Select
+      className="selectFund"
       placeholder="Busque por nome ou CNPJ"
-      onChange={props.changeFunction} />
-  );
+      options={mapFunds(props.Funds)}
+      onInputChange={props.onChange}
+    />
+  )
 }

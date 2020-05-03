@@ -4,13 +4,20 @@ import SearchBar from '../SearchBar/index'
 
 import './styles.css'
 
+const options = [
+  { value: 'chocolate', label: 'Chocolate' },
+  { value: 'strawberry', label: 'Strawberry' },
+  { value: 'vanilla', label: 'Vanilla' }
+]
+
+
 export default props => {
   return (
     <div id="container">
       <h1>Buscar</h1>
       <p>Encontre o valor <span class="hightlight">atualizado</span> da sua cota</p>
-      <input type="text" placeholder="Busque por nome ou CNPJ" />
-      <SearchBar />
+      <SearchBar Funds={options} />
+
       <section class="buttons">
         <button>Popular</button>
         <button>Trending</button>
