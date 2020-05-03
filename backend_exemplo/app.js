@@ -1,7 +1,24 @@
 const axios = require('axios')
+const cors = require('cors')
 const express = require('express')
 
 const app = express()
+
+var whitelist = ['*']
+var corsOptions = {
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true)
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
+  }
+}
+
+// Then pass them to cors:
+app.use(cors());
+
+
 
 app.get('/', (req, res) => {
   function reverseStr(str) {
@@ -36,7 +53,8 @@ app.get('/', (req, res) => {
       cnpj = reverseStr(cnpj)
       console.log('cnpj :>> ', cnpj);
 
-      return res.status(200).json({ date, quote, cnpj })
+      const name = "Fundo de teste"
+      return res.status(200).json([{ name, date, quote, cnpj }])
     })
 })
 
