@@ -8,7 +8,7 @@ export default props => {
     const options = funds.map(fund => {
       return {
         label: fund.name,
-        value: fund.cnpj
+        value: fund.CNPJ
       }
     })
     return options
@@ -19,7 +19,7 @@ export default props => {
       className="selectFund"
       placeholder="Busque por nome ou CNPJ"
       options={mapFunds(props.Funds)}
-      onInputChange={props.onChange}
+      onChange={props.handleOnChange}
     />
   )
 }
