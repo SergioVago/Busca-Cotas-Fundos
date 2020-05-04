@@ -34,17 +34,7 @@ header hr {
     font-weight: 800;
 }
 
-#container input {
-    background: #f1f1f1;
 
-    margin: 25px 0;
-
-    border       : none;
-    border-radius: 5px;
-    text-align   : center;
-    height       : 35px;
-    opacity      : 0.5;
-}
 
 #container .buttons {
     display        : flex;
