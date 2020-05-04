@@ -64,12 +64,21 @@
 }*/
 
 .card {
-  flex-basis: 30%;
-  flex-grow : 1;
-
   background: #fff;
-  min-width : 320px;
-  height    : 350px;
+
+  padding: 10px;
 
   border-radius: 15px;
+
+  height: 350px;
+}
+
+.card-section {
+  flex     : 0 0 32%;
+  flex-grow: 1;
+
+  min-width: 320px;
+
+  padding-top  : 10px;
+  padding-right: 10px;
 }
