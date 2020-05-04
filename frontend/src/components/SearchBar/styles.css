@@ -1,5 +1,5 @@
 .selectFund {
-  background: #f1f1f1;
+  background-color: #4A575D;
 
   margin: 25px 0;
 
@@ -7,5 +7,6 @@
   border-radius: 5px;
   text-align   : center;
   height       : 35px;
-  opacity      : 0.5;
+
+  color: #03151D;
 }

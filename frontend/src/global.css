@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
 
 * {
   margin    : 0;
@@ -16,10 +16,14 @@ body {
 
   background: #03151D;
   color     : #efefef;
+
+  padding-left : 25px;
+  margin-bottom: 50px;
 }
 
-input,
-button,
-textarea {
-  font: 400 18px Roboto, sans-serif;
+
+@media (max-width: 800px) {
+  body {
+    padding-left: 0;
+  }
 }

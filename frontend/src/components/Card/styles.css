@@ -1,4 +1,4 @@
-.founds-container{
+/*.founds-container{
   background-color: #03151D;
   align-items: center;
   align-content: space-between;
@@ -61,4 +61,79 @@
   color: #5F5F5F;
   line-height: 21px;
   font-size: 16px;
+}*/
+
+.card-section {
+  flex     : 0 1 32%;
+  flex-grow: 1;
+
+  min-width: 320px;
+
+  padding-top  : 25px;
+  padding-right: 25px;
+}
+
+
+.card {
+  background: #fff;
+
+  height: 100%;
+
+  border-radius: 15px;
+
+  justify-content: center;
+  align-self     : center;
+}
+
+.card section {
+  margin: 0;
+
+  padding: 35px 25px;
+
+  display: flex;
+  color  : #03151D;
+}
+
+.card section h2 {
+  text-overflow: ellipsis;
+  overflow     : hidden;
+  white-space  : nowrap;
+
+  width: 80%;
+
+  flex: 1;
+}
+
+.card section img {
+  height: 20px;
+  width : 20px;
+
+  margin-left: 15px;
+
+  align-self: center;
+}
+
+
+.card .content {
+  margin : 10px 0;
+  padding: 25px;
+
+
+}
+
+.card .content p {
+  margin-bottom: 5px;
+}
+
+
+@media (max-width: 800px) {
+  .card-section {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .card-section {
+    min-width: 100%;
+  }
 }

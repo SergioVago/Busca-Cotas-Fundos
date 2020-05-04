@@ -1,0 +1,10 @@
+.cards {
+  display  : flex;
+  flex     : 1;
+  flex-flow: row wrap;
+
+  justify-content: space-between;
+  align-content  : space-between;
+
+  width: 100%;
+}
