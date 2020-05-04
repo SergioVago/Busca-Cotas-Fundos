@@ -9,15 +9,15 @@ export default class Cards extends Component {
   render() {
     return (
       <div className="cards">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card index="0" />
+        <Card index="1" />
+        <Card index="0" />
+        <Card index="1" />
+        <Card index="0" />
+        <Card index="1" />
+        <Card index="1" />
+        <Card index="1" />
+        <Card index="0" />
       </div>
     );
   }
