@@ -2,6 +2,7 @@
 
 const Fund = use('App/Models/Fund')
 const axios = use('axios')
+const dateFns = use('date-fns')
 
 /** @typedef {import('@adonisjs/framework/src/Request')} Request */
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
@@ -11,14 +12,19 @@ class AuxFundsController {
         return str.split("").reverse().join("")
     }
 
+    toDate(date) {
+        return date.split("/").reverse().join("-")
+    }
+
+
     async atualizaFundo(id) {
         console.log(`buscando id = ${id}... `);
 
         const { data } = await axios.get(`https://servicosfinanceiros.bnymellon.com/AppPages/investimentfunds/fund.aspx?iditem=${id}`)
-        console.log('data :>> ', data);
 
         var dateResult = data.search("ContentPlaceHolder_lblDateValue")
         var date = data.substring(dateResult + 33, dateResult + 43)
+        date = this.toDate(date)
         console.log('date :>> ', date);
 
         var quoteResult = data.search("ContentPlaceHolder_lblQuoteValue")
