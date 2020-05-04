@@ -1,12 +1,3 @@
-header {
-    width : 80%;
-    margin: 0 auto;
-}
-
-header hr {
-    border: 0.5px solid rgb(4, 30, 41);
-}
-
 #container {
     width     : 80%;
     margin    : 0 auto;
