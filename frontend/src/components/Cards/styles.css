@@ -16,7 +16,6 @@
    justify-content: space-between;
 }
 .founds-container ul li{
-  justify-content: space-between;
   min-width: 250px;
     width    : 28%;
   background: #EFEFEF;
@@ -26,8 +25,6 @@
   border-color: black;
   font-weight: bold;
   height: 260px;
-  margin-left: 20px;
-  margin-right: 30px;
-  margin-top: 20px; 
-  margin-bottom: 20px;
+  margin-top: 30px; 
+  margin-bottom: 30px;
 } 

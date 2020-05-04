@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom';
 import Card from '../Card'
-import './index.css'
+import './styles.css'
 
 export default class cards extends Component{
   
@@ -46,7 +46,6 @@ export default class cards extends Component{
             <li>
             <Card/>
             </li>
-          
           
           </ul>
           

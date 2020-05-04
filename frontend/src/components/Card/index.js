@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import { FaStar} from 'react-icons/fa'
-import './index.css'
+import './styles.css'
 
 export default class card extends Component{
 
@@ -17,10 +17,8 @@ export default class card extends Component{
     }
     return(
         <div className="founds-container">
-        <ul>
             <div className = "founds-container-header">
               <strong> {founds.nome}</strong>
-              
               <button onClick = {this.handleFavorite} type="button">
                 <FaStar size={26} color="#CFCFCF"/>
               </button>
@@ -33,7 +31,6 @@ export default class card extends Component{
               <p>Data: {founds.data}</p>
               <p>CNPJ: {founds.cnpj}</p>
             </div>
-          </ul>
         </div>
 
     );

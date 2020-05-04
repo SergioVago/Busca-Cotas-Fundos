@@ -2,7 +2,6 @@
   align-items: center;
   align-content: space-between;
   width: 100%;
-  max-width: 1583px;
 
 }
 .founds-container-header{
@@ -10,25 +9,29 @@
   display: flex;
   justify-content: space-between;
   align-items: left;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color:#CFCFCF;
+  margin: auto;
   
 }
-.founds-container ul li button{
+.founds-container button{
   position: absolute;
   right: 24px;
   top: 31px;
   border: 0;
   transition: 0.2s;
 }
-.founds-container ul li button:hover{
+.founds-container button:hover{
   opacity: 0.8;
 }
-.founds-container ul li strong{
+.founds-container strong{
   display: block;
   margin-bottom: 16px;
   color:#03151D;
   font-size: 40px;
 }
-.founds-container ul p + strong{
+.founds-container p + strong{
   margin-top: 32px;
 
 }
