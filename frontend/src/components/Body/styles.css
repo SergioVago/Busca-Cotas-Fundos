@@ -11,7 +11,7 @@
 
 #container .searchs {
     margin       : 10px 0;
-    padding-right: 10px;
+    padding-right: 25px;
 }
 
 #container p {
@@ -32,17 +32,7 @@
     font-weight: 800;
 }
 
-
-
-#container .buttons {
-    display        : flex;
-    justify-content: space-between;
-}
-
-#container .buttons button {
-    height: 45px;
-    width : 24%;
-
+#container button {
     background: #efefef;
     color     : #03151D;
 
@@ -51,9 +41,60 @@
     font-weight   : bold;
     letter-spacing: 1.5px;
 
+    width: 24%;
+}
+
+#container .squareButtons {
+    display        : flex;
+    justify-content: space-between;
+}
+
+#container .squareButtons button {
+    height: 45px;
+
     border       : none;
     border-radius: 5px;
 }
+
+#container .circleButtons {
+    display        : flex;
+    flex-flow      : row;
+    justify-content: space-between;
+
+    margin-bottom: 45px;
+}
+
+#container .circleButtons .iconSection {
+    flex      : 1;
+    flex-flow : column wrap;
+    text-align: center;
+
+    display: grid;
+}
+
+#container .circleButtons .iconSection label {
+    font-size: 0.6rem;
+    padding  : 5px;
+}
+
+
+
+#container .circleButtons .iconSection .icon {
+    place-self: center;
+
+    transition      : background-color 300ms ease-in-out;
+    background-color: whitesmoke;
+    border-radius   : 50%;
+    display         : inline-block;
+    height          : 50px;
+    width           : 50px;
+    padding         : 12px;
+    padding         : 13px;
+    text-align      : center;
+    vertical-align  : middle;
+    margin-bottom   : 8px;
+}
+
 
 #container .cotas {
     display        : flex;
@@ -77,4 +118,10 @@
     background: #efefef;
     color     : #5E5E5E;
 
+}
+
+@media (max-width: 800px) {
+    #container .searchs {
+        padding-right: 0;
+    }
 }

@@ -11,6 +11,41 @@ const options = [
   { value: 'vanilla', label: 'Vanilla' }
 ]
 
+const squareButtons = () => {
+  return (
+    <section className="squareButtons">
+      <button>Popular</button>
+      <button>Trending</button>
+      <button>Recentes</button>
+      <button>Favoritos</button>
+    </section>
+  )
+}
+
+const circleButtons = () => {
+  return (
+    <section className="circleButtons">
+      <section className="iconSection">
+        <div className="icon"></div>
+        <label>Popular</label>
+      </section>
+      <section className="iconSection">
+        <div className="icon"></div>
+        <label>Trending</label>
+      </section>
+      <section className="iconSection">
+        <div className="icon"></div>
+        <label>Recentes</label>
+      </section>
+      <section className="iconSection">
+        <div className="icon"></div>
+        <label>Favoritos</label>
+      </section>
+    </section>
+  )
+}
+
+
 
 export default props => {
   return (
@@ -19,13 +54,12 @@ export default props => {
       <p>Encontre o valor <span className="hightlight">atualizado</span> da sua cota</p>
       <section className="searchs" >
         <SearchBar Funds={options} />
+        {window.innerWidth > 800 ?
+          squareButtons()
+          :
+          circleButtons()
+        }
 
-        <section className="buttons">
-          <button><span id="text">Popular</span></button>
-          <button>Trending</button>
-          <button>Recentes</button>
-          <button>Favoritos</button>
-        </section>
       </section>
 
       <Cards></Cards>

@@ -17,5 +17,12 @@ body {
   background: #03151D;
   color     : #efefef;
 
-  padding-left: 10px;
+  padding-left: 25px;
+}
+
+
+@media (max-width: 800px) {
+  body {
+    padding-left: 0;
+  }
 }
