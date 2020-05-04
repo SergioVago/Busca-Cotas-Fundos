@@ -21,7 +21,7 @@ export default props => {
         <SearchBar Funds={options} />
 
         <section className="buttons">
-          <button>Popular</button>
+          <button><span id="text">Popular</span></button>
           <button>Trending</button>
           <button>Recentes</button>
           <button>Favoritos</button>
