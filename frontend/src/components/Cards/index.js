@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom';
 import Card from '../Card'
+import './index.css'
 
 export default class cards extends Component{
   
@@ -8,21 +9,45 @@ export default class cards extends Component{
     return(
       <React.StrictMode >
         <div className = "founds-container">
-          <ul className="founds-container">
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
+          <ul>
+            <li>
+            <Card/>
+            </li>
+            <li>
+            <Card/>
+            </li>
+            <li>
+            <Card/>
+            </li>
+            <li>
+            <Card/>
+            </li>
+            <li>
+            <Card/>
+            </li>
+            <li>
+            <Card/>
+            </li>
+            <li>
+            <Card/>
+            </li>
+            <li>
+            <Card/>
+            </li>
+            <li>
+            <Card/>
+            </li>
+            <li>
+            <Card/>
+            </li>
+            <li>
+            <Card/>
+            </li>
+            <li>
+            <Card/>
+            </li>
+          
+          
           </ul>
           
         </div>

@@ -1,12 +1,33 @@
 .founds-container{
- 
-  background-color: #03151D;
-  align-items: center;
-  align-content: space-between;
-  max-width: 1080px;
-  width: 80%;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1583px;
+  
 } 
-.founds-container ul{
+.founds-container ul {
+  display        : flex;
+  flex-wrap      : wrap;
   grid-template-columns: repeat(3, 1fr);
-  align-items: center;
+  list-style: none;
+   border-radius: 8px;
+   margin-bottom: 16px;
+   justify-content: space-between;
 }
+.founds-container ul li{
+  justify-content: space-between;
+  min-width: 250px;
+    width    : 28%;
+  background: #EFEFEF;
+  padding: 24px;
+  border-radius: 14px;
+  position: relative;
+  border-color: black;
+  font-weight: bold;
+  height: 260px;
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-top: 20px; 
+  margin-bottom: 20px;
+} 

@@ -18,25 +18,21 @@ export default class card extends Component{
     return(
         <div className="founds-container">
         <ul>
-            <li className="founds-container">
             <div className = "founds-container-header">
               <strong> {founds.nome}</strong>
               
               <button onClick = {this.handleFavorite} type="button">
-                <FaStar size={30} color="#CFCFCF"/>
+                <FaStar size={26} color="#CFCFCF"/>
               </button>
             
               </div>
-            <div className = "founds-container-content">
+            <div class = "founds-container-content">
               <p>  Nome: {founds.nome}</p>
               <p> Cota: {founds.cota}</p>
               
               <p>Data: {founds.data}</p>
               <p>CNPJ: {founds.cnpj}</p>
             </div>
-           
-
-            </li>
           </ul>
         </div>
 
