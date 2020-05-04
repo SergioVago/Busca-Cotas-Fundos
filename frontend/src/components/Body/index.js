@@ -16,16 +16,17 @@ export default props => {
   return (
     <div id="container">
       <h1>Buscar</h1>
-      <p>Encontre o valor <span class="hightlight">atualizado</span> da sua cota</p>
-      <SearchBar Funds={options} />
+      <p>Encontre o valor <span className="hightlight">atualizado</span> da sua cota</p>
+      <section className="searchs" >
+        <SearchBar Funds={options} />
 
-      <section class="buttons">
-        <button>Popular</button>
-        <button>Trending</button>
-        <button>Recentes</button>
-        <button>Favoritos</button>
+        <section className="buttons">
+          <button>Popular</button>
+          <button>Trending</button>
+          <button>Recentes</button>
+          <button>Favoritos</button>
+        </section>
       </section>
-
 
       <Cards></Cards>
     </div>

@@ -12,8 +12,15 @@ header hr {
     margin    : 0 auto;
     margin-top: 50px;
 
+    max-width: 1080px;
+
     display       : flex;
     flex-direction: column;
+}
+
+#container .searchs {
+    margin       : 10px 0;
+    padding-right: 10px;
 }
 
 #container p {

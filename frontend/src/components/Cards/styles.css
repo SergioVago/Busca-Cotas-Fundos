@@ -3,9 +3,9 @@
   flex     : 1;
   flex-flow: row wrap;
 
-  width      : 100%;
-  background : #0e0e0e;
-  align-items: stretch;
-
   justify-content: space-between;
+  align-content  : space-between;
+
+  width      : 100%;
+  align-items: stretch;
 }
