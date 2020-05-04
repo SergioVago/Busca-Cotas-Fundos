@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Select from 'react-select';
 
 import './styles.css'
@@ -7,7 +7,7 @@ export default props => {
   const mapFunds = (funds) => {
     const options = funds.map(fund => {
       return {
-        label: fund.name,
+        label: fund.name + ` (${fund.CNPJ})`,
         value: fund.CNPJ
       }
     })

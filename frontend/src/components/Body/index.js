@@ -47,7 +47,7 @@ export default props => {
 
   function handleSearchBarChange(selectedOption) {
     const filteredFund = funds.filter(fund => {
-      return fund.CNPJ == selectedOption.value
+      return fund.CNPJ === selectedOption.value
     })
 
     console.log('filteredFund', filteredFund)

@@ -117,6 +117,12 @@
 .card .content {
   margin : 10px 0;
   padding: 25px;
+
+
+}
+
+.card .content p {
+  margin-bottom: 5px;
 }
 
 
