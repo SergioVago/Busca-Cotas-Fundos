@@ -4,4 +4,5 @@
 const Route = use('Route')
 
 Route.resource('funds', 'FundController').apiOnly()
-Route.get('funds/cnpj/:cnpj', 'CnpjController.show')
+Route.get('funds/aux/cnpj/:cnpj', 'AuxFundsController.show')
+Route.get('funds/aux/updateAll/', 'AuxFundsController.updateAll')
