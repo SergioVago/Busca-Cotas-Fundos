@@ -33,7 +33,7 @@ A rota [api.cotas.org/funds/aux/updateAll](http://api.cotas.org/funds/aux/update
 
 ## Frontend
 
-A versão mais recente do backend está na branch "frontend-deeploy"
+A versão mais recente do backend está na branch "frontend-deploy"
 
 O nosso frontend foi desenvolvido em ReactJS e está disponível <a href="https://cotas.org" target="_blank" title="cotas.org">Aqui</a>
 
