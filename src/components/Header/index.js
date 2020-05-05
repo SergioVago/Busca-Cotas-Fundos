@@ -1,6 +1,6 @@
 import React from 'react'
 
-import logo from '../../assets/Logo_site_org.png'
+import logo from '../../assets/cotas_org.svg'
 
 import './styles.css'
 
