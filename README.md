@@ -16,29 +16,29 @@ As outras rotas são auxiliares (consultas específicas, criação, deleção e 
 A rota api.cotas.org/funds/aux/updateAll é utilizada para atualizar nosso DB com a cota do dia de cada fundo
 
  
-┌:─────────────────────:┬:─────────:┬:────────────────────────────:┬:─────────────────────:┐
-│:Route                :│:Verb(s)  :│:Handler                     :│:Name                 :│
-├:─────────────────────:┼:─────────:┼:────────────────────────────:┼:─────────────────────:┤
-│:/funds               :│:HEAD,GET :│:FundController.index        :│:funds.index          :│
-├:─────────────────────:┼:─────────:┼:────────────────────────────:┼:─────────────────────:┤
-│:/funds               :│:POST     :│:FundController.store        :│:funds.store          :│
-├:─────────────────────:┼:─────────:┼:────────────────────────────:┼:─────────────────────:┤
-│:/funds/:id           :│:HEAD,GET :│:FundController.show         :│:funds.show           :│
-├:─────────────────────:┼:─────────:┼:────────────────────────────:┼:─────────────────────:┤
-│:/funds/:id           :│:PUT,PATCH:│:FundController.update       :│:funds.update         :│
-├:─────────────────────:┼:─────────:┼:────────────────────────────:┼:─────────────────────:┤
-│:/funds/:id           :│:DELETE   :│:FundController.destroy      :│:funds.destroy        :│
-├:─────────────────────:┼:─────────:┼:────────────────────────────:┼:─────────────────────:┤
-│:/funds/aux/cnpj/:cnpj:│:HEAD,GET :│:AuxFundsController.show     :│:/funds/aux/cnpj/:cnpj:│
-├:─────────────────────:┼:─────────:┼:────────────────────────────:┼:─────────────────────:┤
-│:/funds/aux/updateAll :│:HEAD,GET :│:AuxFundsController.updateAll:│:/funds/aux/updateAll :│
-└:─────────────────────:┴:─────────:┴:────────────────────────────:┴:─────────────────────:┘
+┌───────────────────────┬───────────┬──────────────────────────────┬───────────────────────┐
+│ Route                 │ Verb(s)   │ Handler                      │ Name                  │
+├───────────────────────┼───────────┼──────────────────────────────┼───────────────────────┤
+│ /funds                │ HEAD,GET  │ FundController.index         │ funds.index           │
+├───────────────────────┼───────────┼──────────────────────────────┼───────────────────────┤
+│ /funds                │ POST      │ FundController.store         │ funds.store           │
+├───────────────────────┼───────────┼──────────────────────────────┼───────────────────────┤
+│ /funds/:id            │ HEAD,GET  │ FundController.show          │ funds.show            │
+├───────────────────────┼───────────┼──────────────────────────────┼───────────────────────┤
+│ /funds/:id            │ PUT,PATCH │ FundController.update        │ funds.update          │
+├───────────────────────┼───────────┼──────────────────────────────┼───────────────────────┤
+│ /funds/:id            │ DELETE    │ FundController.destroy       │ funds.destroy         │
+├───────────────────────┼───────────┼──────────────────────────────┼───────────────────────┤
+│ /funds/aux/cnpj/:cnpj │ HEAD,GET  │ AuxFundsController.show      │ /funds/aux/cnpj/:cnpj │
+├───────────────────────┼───────────┼──────────────────────────────┼───────────────────────┤
+│ /funds/aux/updateAll  │ HEAD,GET  │ AuxFundsController.updateAll │ /funds/aux/updateAll  │
+└───────────────────────┴───────────┴──────────────────────────────┴───────────────────────┘
 
 ## Frontend
 
 A versão mais recente do backend está na branch "frontend-deeploy"
 
-O nosso frontend foi desenvolvido em ReactJS e está disponível <a href="https://cotas.org" title="cotas.org">Aqui</a>
+O nosso frontend foi desenvolvido em ReactJS e está disponível <a href="https://cotas.org" target="_blank" title="cotas.org">Aqui</a>
 
 A ideia dele é basicamete de servir como exemplo do que pode ser feito utilizado nossa API
 
