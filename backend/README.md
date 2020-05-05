@@ -1,6 +1,6 @@
 # Backend
 
-A versão mais recente do backend está na branch "backend-deeploy"
+A versão mais recente do backend está na branch "backend-deploy"
 
 O backend foi estruturado em AdonisJS e o banco de dados utilizado foi o postgres.
 
