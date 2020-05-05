@@ -1,12 +1,14 @@
 import React from 'react'
 
+import logo from '../../assets/Logo_site_org.png'
+
 import './styles.css'
 
 export default props => {
   return (
     <header>
-      <h2>Cotas</h2>
+      <img src={logo} alt="Site Logo" />
       <hr></hr>
-    </header>
+    </header >
   )
 }
