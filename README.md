@@ -10,11 +10,10 @@ A versão mais recente do backend está na branch "backend-deeploy"
 
 O backend foi estruturado em AdonisJS e o banco de dados utilizado foi o postgres.
 
-O rota principal é a api.cotas.org/funds que lista todos os fundos cadastrados no nosso DB.
+O rota principal é a [api.cotas.org/funds](http://api.cotas.org/funds) que lista todos os fundos cadastrados no nosso DB.
 As outras rotas são auxiliares (consultas específicas, criação, deleção e atualização).
 
-A rota api.cotas.org/funds/aux/updateAll é utilizada para atualizar nosso DB com a cota do dia de cada fundo
-
+A rota [api.cotas.org/funds/aux/updateAll](http://api.cotas.org/funds/aux/updateAll) é utilizada para atualizar nosso DB com a cota do dia de cada fundo
  
 | Route                 | Verb(s)   | Handler                      | Name                  |
 |-----------------------|-----------|------------------------------|-----------------------|
