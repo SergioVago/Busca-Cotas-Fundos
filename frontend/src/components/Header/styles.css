@@ -5,6 +5,10 @@ header {
   margin       : 40px auto;
 }
 
+header img {
+  max-width: 320px;
+}
+
 header hr {
   margin-top: 20px;
   border    : 0.5px solid rgb(4, 30, 41);
