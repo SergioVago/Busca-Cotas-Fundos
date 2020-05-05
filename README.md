@@ -17,12 +17,19 @@ A rota api.cotas.org/funds/aux/updateAll é utilizada para atualizar nosso DB co
 
  
 | Route                 | Verb(s)   | Handler                      | Name                  |
+|-----------------------|-----------|------------------------------|-----------------------|
 | /funds                | HEAD,GET  | FundController.index         | funds.index           |
+|-----------------------|-----------|------------------------------|-----------------------|
 | /funds                | POST      | FundController.store         | funds.store           |
+|-----------------------|-----------|------------------------------|-----------------------|
 | /funds/:id            | HEAD,GET  | FundController.show          | funds.show            |
+|-----------------------|-----------|------------------------------|-----------------------|
 | /funds/:id            | PUT,PATCH | FundController.update        | funds.update          |
+|-----------------------|-----------|------------------------------|-----------------------|
 | /funds/:id            | DELETE    | FundController.destroy       | funds.destroy         |
+|-----------------------|-----------|------------------------------|-----------------------|
 | /funds/aux/cnpj/:cnpj | HEAD,GET  | AuxFundsController.show      | /funds/aux/cnpj/:cnpj |
+|-----------------------|-----------|------------------------------|-----------------------|
 | /funds/aux/updateAll  | HEAD,GET  | AuxFundsController.updateAll | /funds/aux/updateAll  |
 
 ## Frontend
